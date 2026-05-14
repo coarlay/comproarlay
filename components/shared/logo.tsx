@@ -23,7 +23,7 @@ export function Logo({ className, height = 36, priority = false }: LogoProps) {
       )}
     >
       <Image
-        src="/arlaylogo.png"
+        src="/arlay.png"
         alt="Arlay"
         width={width}
         height={height}
