@@ -31,12 +31,12 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "glass-strong shadow-lg shadow-black/20"
+          ? "glass-strong shadow-sm shadow-slate-900/5"
           : "bg-transparent"
       )}
     >
       <div className="container flex h-16 items-center justify-between md:h-20">
-        <Logo />
+        <Logo priority />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map((link) => {

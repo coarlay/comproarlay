@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0f",
+  themeColor: "#f9f7f4",
   width: "device-width",
   initialScale: 1,
 };
@@ -74,7 +74,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="dark" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <body
         className={`${inter.variable} font-sans bg-background text-foreground min-h-screen flex flex-col`}
       >
