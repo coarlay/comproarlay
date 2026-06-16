@@ -12,7 +12,7 @@ export function Testimonials() {
         <SectionHeading
           eyebrow="Testimoni"
           title="Kata mereka tentang Arlay"
-          description="Cerita dari klien dan alumni yang telah mempercayakan perjalanan digitalnya bersama kami."
+          description="Cerita dari klien yang telah mempercayakan perjalanan digitalnya bersama kami."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

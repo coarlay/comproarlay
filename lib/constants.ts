@@ -1,9 +1,9 @@
 export const SITE_CONFIG = {
   name: "Arlay",
   description:
-    "Arlay adalah mitra digital Anda untuk jasa pembuatan website profesional dan kelas coding online yang dirancang untuk mencetak talenta teknologi masa depan.",
-  url: "https://arlay.id",
-  tagline: "Bangun Digital, Cetak Talenta",
+    "Arlay adalah mitra digital Anda untuk jasa pembuatan website profesional yang dirancang untuk membantu bisnis Anda tumbuh di era digital.",
+  url: "https://www.arlay.my.id",
+  tagline: "Bangun Digital Bersama Arlay",
   whatsapp: "6281234567890",
   email: "halo@arlay.id",
   phone: "+62 812-3456-7890",
@@ -11,7 +11,7 @@ export const SITE_CONFIG = {
   social: {
     instagram: "https://instagram.com/arlay.id",
     linkedin: "https://linkedin.com/company/arlay",
-    github: "https://github.com/arlay",
+    github: "https://github.com/coarlay",
     youtube: "https://youtube.com/@arlay",
   },
 };
@@ -20,14 +20,14 @@ export const NAV_LINKS = [
   { label: "Beranda", href: "/" },
   { label: "Layanan", href: "/layanan" },
   { label: "Portfolio", href: "/portfolio" },
-  { label: "Kelas Coding", href: "/kelas" },
+  { label: "Blog", href: "/blog" },
   { label: "Tentang", href: "/tentang" },
   { label: "Kontak", href: "/kontak" },
 ];
 
 export const STATS = [
   { value: "120+", label: "Proyek Selesai" },
-  { value: "850+", label: "Siswa Aktif" },
+  { value: "98%", label: "Klien Puas" },
   { value: "4.9/5", label: "Rating Klien" },
   { value: "50+", label: "Partner Bisnis" },
 ];
@@ -51,22 +51,171 @@ export const SERVICES = [
     startPrice: "Rp 3.500.000",
   },
   {
-    id: "coding-class",
-    title: "Kelas Coding Online",
-    short: "Belajar ngoding dari basic sampai production-ready",
+    id: "digital-marketing",
+    title: "Digital Marketing & SEO",
+    short: "Tingkatkan visibilitas & konversi online Anda",
     description:
-      "Kurikulum terstruktur, mentor berpengalaman, proyek nyata. Cocok untuk pemula hingga profesional yang ingin upskill.",
-    icon: "GraduationCap",
+      "Strategi digital marketing terpadu untuk meningkatkan traffic, leads, dan penjualan. Dari SEO hingga social media management.",
+    icon: "TrendingUp",
     features: [
-      "Live Class + Rekaman Video",
-      "Mentor 1-on-1",
-      "Sertifikat Resmi",
-      "Akses Komunitas Alumni",
-      "Project Portfolio",
-      "Garansi Ulang Kelas",
+      "SEO On-Page & Off-Page",
+      "Google Ads & Meta Ads",
+      "Social Media Management",
+      "Content Marketing Strategy",
+      "Analytics & Reporting Bulanan",
+      "Conversion Rate Optimization",
     ],
-    startPrice: "Rp 299.000",
+    startPrice: "Rp 2.000.000",
   },
+  {
+    id: "konsultasi-karya-ilmiah",
+    title: "Konsultasi & Editing Karya Ilmiah",
+    short: "Bimbingan dan editing skripsi, jurnal, & makalah",
+    description:
+      "Bantu perbaiki struktur, bahasa, dan format sitasi karya ilmiahmu — skripsi, jurnal, makalah, dan laporan. Bukan membuatkan, melainkan membimbing dan mengedit.",
+    icon: "FileText",
+    features: [
+      "Review struktur & alur penulisan (BAB I–V)",
+      "Perbaikan tata bahasa & ejaan (PUEBI)",
+      "Pengecekan logika argumen & koherensi",
+      "Format sitasi APA / IEEE / Chicago",
+      "Saran perbaikan abstrak & kesimpulan",
+      "Konsultasi via WhatsApp / Google Meet",
+    ],
+    startPrice: "Rp 150.000",
+  },
+  {
+    id: "project-arduino-iot-ai",
+    title: "Project Arduino / IoT / AI",
+    short: "Prototipe hardware & kecerdasan buatan siap pakai",
+    description:
+      "Wujudkan ide teknismu jadi kenyataan — dari prototipe Arduino hingga sistem IoT dan AI siap pakai. Cocok untuk skripsi, PKM, lomba, maupun kebutuhan bisnis.",
+    icon: "Cpu",
+    features: [
+      "Arduino & mikrokontroler (ESP32, Raspberry Pi)",
+      "Dashboard IoT realtime",
+      "Integrasi AI & Machine Learning",
+      "Cocok untuk skripsi, PKM, & bisnis",
+      "Konsultasi & pendampingan presentasi",
+      "Dokumentasi teknis lengkap",
+    ],
+    startPrice: "Rp 500.000",
+  },
+];
+
+export const PRICING = [
+  {
+    id: "starter",
+    name: "Starter",
+    tagline: "Cocok untuk UMKM & freelancer yang baru ingin go digital.",
+    price: "Rp 3.500.000",
+    period: "sekali bayar",
+    highlight: false,
+    features: [
+      "1-5 halaman (company profile / landing page)",
+      "Desain responsif mobile-first",
+      "Domain .com gratis 1 tahun",
+      "Hosting 1 tahun",
+      "SSL & email bisnis",
+      "SEO dasar (meta, sitemap, schema)",
+      "Revisi desain 2x",
+      "Garansi bug fix 1 bulan",
+      "Waktu pengerjaan 1-2 minggu",
+    ],
+    cta: "Pilih Paket Starter",
+  },
+  {
+    id: "business",
+    name: "Business",
+    tagline: "Untuk bisnis yang butuh e-commerce atau fitur lebih kompleks.",
+    price: "Rp 8.500.000",
+    period: "sekali bayar",
+    highlight: true,
+    badge: "Paling Populer",
+    features: [
+      "Hingga 20 halaman + e-commerce",
+      "Admin panel / CMS",
+      "Integrasi payment gateway (Midtrans/Xendit)",
+      "Integrasi ongkir (RajaOngkir/Shipper)",
+      "Notifikasi email & WhatsApp",
+      "SEO advanced (schema, analytics, speed optimization)",
+      "Revisi desain tak terbatas (selama scope)",
+      "Maintenance gratis 1 bulan",
+      "Garansi bug fix 3 bulan",
+      "Waktu pengerjaan 3-5 minggu",
+    ],
+    cta: "Pilih Paket Business",
+  },
+  {
+    id: "custom",
+    name: "Custom",
+    tagline: "Untuk kebutuhan aplikasi web kompleks atau integrasi sistem.",
+    price: "Hubungi Kami",
+    period: "sesuai kebutuhan",
+    highlight: false,
+    features: [
+      "Aplikasi web / dashboard / SaaS",
+      "API & integrasi sistem pihak ketiga",
+      "Realtime features & websockets",
+      "Mobile app (React Native)",
+      "Arsitektur cloud & DevOps",
+      "Dedicated project manager",
+      "SLA support khusus",
+      "Source code & dokumentasi lengkap",
+      "Garansi disesuaikan per proyek",
+    ],
+    cta: "Konsultasi Gratis",
+  },
+];
+
+export const GUARANTEES = [
+  {
+    icon: "ShieldCheck",
+    title: "Garansi Bug Fix",
+    description:
+      "Bug yang muncul setelah launch kami perbaiki gratis: 1 bulan (Starter), 3 bulan (Business), atau sesuai kesepakatan (Custom).",
+  },
+  {
+    icon: "RefreshCw",
+    title: "Revisi Desain",
+    description:
+      "Revisi desain sesuai paket. Paket Business mendapat revisi tak terbatas selama masih dalam scope proyek yang disepakati.",
+  },
+  {
+    icon: "Clock",
+    title: "Tepat Waktu",
+    description:
+      "Jika proyek terlambat dari timeline yang disepakati bukan karena keterlambatan klien, kami berikan diskon 10% dari total proyek.",
+  },
+  {
+    icon: "FileCode",
+    title: "Source Code Milik Anda",
+    description:
+      "Setelah pelunasan, source code 100% milik Anda. Bebas migrasi ke vendor lain tanpa biaya tambahan dari Arlay.",
+  },
+  {
+    icon: "MessageSquare",
+    title: "Response Time Support",
+    description:
+      "Kami balas chat dalam maksimal 4 jam kerja. Tiket darurat (bug critical) ditangani dalam 24 jam.",
+  },
+  {
+    icon: "BadgeCheck",
+    title: "Kontrak & Kuitansi Resmi",
+    description:
+      "Setiap proyek memiliki kontrak tertulis dengan milestone, scope, dan deliverable yang jelas. Pembayaran via transfer bank resmi.",
+  },
+];
+
+export const CLIENT_LOGOS = [
+  { name: "Kopi Nusantara", slug: "kopi-nusantara" },
+  { name: "Logistik Cepat", slug: "logistik-cepat" },
+  { name: "Batik Cendana", slug: "batik-cendana" },
+  { name: "Meja Santap", slug: "meja-santap" },
+  { name: "Rumah Impian", slug: "rumah-impian" },
+  { name: "SehatKita", slug: "sehatkita" },
+  { name: "Cerdas Academy", slug: "cerdas-academy" },
+  { name: "Nusantara Finance", slug: "nusantara-finance" },
 ];
 
 export const WHY_US = [
@@ -183,141 +332,6 @@ export const PORTFOLIO = [
   },
 ];
 
-export const COURSES = [
-  {
-    id: "fullstack-web",
-    title: "Fullstack Web Development",
-    level: "Intermediate",
-    duration: "12 minggu",
-    price: "Rp 2.499.000",
-    originalPrice: "Rp 3.499.000",
-    students: 320,
-    rating: 4.9,
-    popular: true,
-    description:
-      "Kuasai React, Next.js, Node.js, dan database dari nol hingga siap kerja. Bangun 5 proyek portfolio nyata.",
-    curriculum: [
-      "HTML, CSS & JavaScript Fundamentals",
-      "React & Next.js App Router",
-      "Backend dengan Node.js & Express",
-      "Database: PostgreSQL & MongoDB",
-      "Authentication & Deployment",
-      "Final Project: Build Your SaaS",
-    ],
-    tag: "Most Popular",
-  },
-  {
-    id: "frontend-react",
-    title: "Frontend Mastery with React",
-    level: "Beginner",
-    duration: "8 minggu",
-    price: "Rp 1.499.000",
-    originalPrice: "Rp 1.999.000",
-    students: 280,
-    rating: 4.8,
-    popular: false,
-    description:
-      "Jadi frontend developer handal. Pelajari React, state management, styling modern, hingga testing.",
-    curriculum: [
-      "JavaScript Modern (ES6+)",
-      "React Hooks & Context API",
-      "Tailwind CSS & Component Library",
-      "State Management (Zustand/Redux)",
-      "API Integration & React Query",
-      "Testing dengan Jest & RTL",
-    ],
-    tag: "Beginner Friendly",
-  },
-  {
-    id: "backend-nodejs",
-    title: "Backend Engineering Node.js",
-    level: "Advanced",
-    duration: "10 minggu",
-    price: "Rp 1.999.000",
-    originalPrice: "Rp 2.799.000",
-    students: 180,
-    rating: 4.9,
-    popular: false,
-    description:
-      "Bangun API production-grade dengan Node.js, TypeScript, dan arsitektur yang scalable.",
-    curriculum: [
-      "TypeScript & Clean Architecture",
-      "Express & Fastify Framework",
-      "PostgreSQL & Prisma ORM",
-      "Authentication (JWT, OAuth)",
-      "Caching, Queue & Microservices",
-      "Deployment dengan Docker & AWS",
-    ],
-    tag: "Advanced Track",
-  },
-  {
-    id: "mobile-reactnative",
-    title: "Mobile App dengan React Native",
-    level: "Intermediate",
-    duration: "10 minggu",
-    price: "Rp 1.799.000",
-    originalPrice: "Rp 2.499.000",
-    students: 145,
-    rating: 4.7,
-    popular: false,
-    description:
-      "Bangun aplikasi mobile cross-platform untuk iOS & Android dengan React Native & Expo.",
-    curriculum: [
-      "React Native Fundamentals",
-      "Navigation & Routing",
-      "Native APIs & Expo",
-      "State Management Mobile",
-      "Push Notification & Offline",
-      "Publish ke App Store & Play Store",
-    ],
-    tag: "Hot",
-  },
-  {
-    id: "uiux-design",
-    title: "UI/UX Design for Developer",
-    level: "Beginner",
-    duration: "6 minggu",
-    price: "Rp 899.000",
-    originalPrice: "Rp 1.299.000",
-    students: 210,
-    rating: 4.8,
-    popular: false,
-    description:
-      "Pelajari prinsip desain, Figma, design system, dan cara kolaborasi dengan designer profesional.",
-    curriculum: [
-      "Design Principles & Psychology",
-      "Figma dari Nol hingga Mahir",
-      "Wireframing & Prototyping",
-      "Design System & Tokens",
-      "User Research & Testing",
-      "Handoff ke Developer",
-    ],
-    tag: "New",
-  },
-  {
-    id: "devops-fundamentals",
-    title: "DevOps & Cloud Fundamentals",
-    level: "Intermediate",
-    duration: "8 minggu",
-    price: "Rp 1.699.000",
-    originalPrice: "Rp 2.299.000",
-    students: 95,
-    rating: 4.9,
-    popular: false,
-    description:
-      "Kuasai Docker, CI/CD, Kubernetes, dan deploy ke AWS/GCP. Skill wajib untuk developer modern.",
-    curriculum: [
-      "Linux & Shell Scripting",
-      "Docker & Docker Compose",
-      "CI/CD dengan GitHub Actions",
-      "Kubernetes Fundamentals",
-      "AWS & GCP Essentials",
-      "Monitoring & Observability",
-    ],
-    tag: "Pro",
-  },
-];
-
 export const TESTIMONIALS = [
   {
     name: "Rafi Santoso",
@@ -326,14 +340,7 @@ export const TESTIMONIALS = [
       "Website baru dari Arlay bikin omzet online kami naik 3x lipat dalam 2 bulan. Timnya responsif dan paham banget kebutuhan bisnis kecil.",
     rating: 5,
     avatar: "RS",
-  },
-  {
-    name: "Anindya Putri",
-    role: "Alumni Fullstack Web",
-    content:
-      "Setelah 3 bulan di Arlay, saya diterima sebagai junior developer di startup fintech. Mentornya sabar dan kurikulumnya sangat aplikatif.",
-    rating: 5,
-    avatar: "AP",
+    linkedin: "",
   },
   {
     name: "Bima Pradana",
@@ -342,14 +349,7 @@ export const TESTIMONIALS = [
       "Arlay mengerjakan dashboard operasional kami dari 0. Hasilnya rapi, cepat, dan dokumentasinya lengkap. Tim terbaik yang pernah kami ajak kerja sama.",
     rating: 5,
     avatar: "BP",
-  },
-  {
-    name: "Citra Wulandari",
-    role: "Alumni Frontend React",
-    content:
-      "Dari yang tadinya cuma bisa HTML, sekarang saya freelance bikin landing page dengan rate internasional. Worth every rupiah!",
-    rating: 5,
-    avatar: "CW",
+    linkedin: "",
   },
   {
     name: "Dimas Aditya",
@@ -358,14 +358,34 @@ export const TESTIMONIALS = [
       "Proses dari brief sampai launch cuma 5 minggu. Desainnya modern, admin panelnya mudah dipakai ibu saya yang bukan orang IT.",
     rating: 5,
     avatar: "DA",
+    linkedin: "",
   },
   {
-    name: "Elvina Hartono",
-    role: "Alumni UI/UX Design",
+    name: "Sari Wulandari",
+    role: "CEO, Rumah Impian",
     content:
-      "Instrukturnya designer aktif di industri, jadi materinya selalu update. Portofolio yang saya bangun di sini langsung dapat klien pertama.",
+      "Virtual tour 360° yang dibuat Arlay bikin calon pembeli lebih yakin. Leads kami naik 200% sejak pakai website baru.",
     rating: 5,
-    avatar: "EH",
+    avatar: "SW",
+    linkedin: "",
+  },
+  {
+    name: "Eko Prasetyo",
+    role: "Head of IT, SehatKita",
+    content:
+      "Platform telemedicine kami butuh fitur kompleks: video call, rekam medis, dan integrasi apotek. Arlay deliver semua dengan kualitas production-ready.",
+    rating: 5,
+    avatar: "EP",
+    linkedin: "",
+  },
+  {
+    name: "Nina Hartanti",
+    role: "Founder, Cerdas Academy",
+    content:
+      "LMS dari Arlay membantu kami scale dari 50 ke 500+ siswa aktif. Fitur kuis dan sertifikat otomatisnya sangat membantu efisiensi tim.",
+    rating: 5,
+    avatar: "NH",
+    linkedin: "",
   },
 ];
 
@@ -378,8 +398,8 @@ export const TEAM = [
   },
   {
     name: "Layla Pramesti",
-    role: "Co-Founder & Head of Education",
-    bio: "Former tech educator di bootcamp ternama. Passionate mencetak 500+ developer siap kerja setiap tahun.",
+    role: "Co-Founder & Project Manager",
+    bio: "Berpengalaman memimpin puluhan proyek digital dari perencanaan hingga delivery tepat waktu.",
     avatar: "LP",
   },
   {
@@ -398,23 +418,63 @@ export const TEAM = [
 
 export const FAQ = [
   {
+    category: "Proses & Timeline",
     q: "Berapa lama proses pembuatan website?",
-    a: "Tergantung kompleksitas. Company profile biasanya 2-3 minggu, e-commerce 4-6 minggu, dan aplikasi web custom 6-12 minggu. Kami selalu berikan timeline detail di awal proyek.",
+    a: "Tergantung kompleksitas. Company profile (Starter) biasanya 1-2 minggu, e-commerce (Business) 3-5 minggu, dan aplikasi web custom 6-12 minggu. Kami selalu berikan timeline detail dan milestone mingguan di awal proyek.",
   },
   {
-    q: "Apakah ada garansi setelah website selesai?",
-    a: "Ya, kami berikan garansi bug fix selama 3 bulan dan maintenance gratis 1 bulan pasca launch. Setelah itu tersedia paket maintenance bulanan sesuai kebutuhan.",
+    category: "Proses & Timeline",
+    q: "Bagaimana alur kerja dari briefing sampai launch?",
+    a: "5 tahap: (1) Discovery call & kontrak, (2) Pembayaran DP 50%, (3) Desain mockup & persetujuan, (4) Development dengan staging link yang bisa Anda pantau setiap minggu, (5) QA, training admin, pelunasan, dan launch.",
   },
   {
-    q: "Kelas coding cocok untuk yang belum pernah ngoding?",
-    a: "Sangat cocok. Kami punya track khusus untuk pemula dengan pendekatan step-by-step. Banyak alumni kami yang mulai dari nol dan sekarang bekerja sebagai developer.",
+    category: "Harga & Pembayaran",
+    q: "Berapa kisaran harga membuat website di Arlay?",
+    a: "Paket Starter mulai Rp 3.500.000 untuk company profile, Paket Business mulai Rp 8.500.000 untuk e-commerce dengan CMS, dan Paket Custom disesuaikan dengan kebutuhan proyek. Semua harga sudah termasuk domain .com dan hosting 1 tahun.",
   },
   {
-    q: "Apakah dapat sertifikat setelah selesai kelas?",
-    a: "Ya, setiap alumni mendapat sertifikat resmi dari Arlay yang bisa dicantumkan di CV dan LinkedIn. Sertifikat diverifikasi dengan QR code.",
+    category: "Harga & Pembayaran",
+    q: "Apakah bisa cicil?",
+    a: "Bisa. Skema pembayaran: 50% DP di awal, 50% sebelum launch. Untuk proyek di atas Rp 10 juta kami menyediakan cicilan 0% hingga 12 bulan.",
   },
   {
-    q: "Bisakah cicil pembayaran?",
-    a: "Bisa. Kami menyediakan opsi cicilan 0% hingga 12 bulan untuk kelas coding dan proyek di atas Rp 10 juta.",
+    category: "Harga & Pembayaran",
+    q: "Apa saja yang tidak termasuk dalam harga?",
+    a: "Biaya domain lanjutan (setelah tahun pertama, ~Rp 200rb/tahun), biaya renewal hosting (~Rp 500rb/tahun untuk Starter, ~Rp 1jt/tahun untuk Business), biaya add-on fitur di luar scope, dan biaya stok foto/aset premium (jika diperlukan).",
+  },
+  {
+    category: "Teknis",
+    q: "Teknologi apa yang Arlay gunakan?",
+    a: "Stack utama kami Next.js + TypeScript, Tailwind CSS, dan Prisma/PostgreSQL. Untuk CMS kami pakai Sanity atau Strapi. Hosting di Vercel/Railway. Untuk proyek WordPress/Shopify kami juga melayani sesuai kebutuhan.",
+  },
+  {
+    category: "Teknis",
+    q: "Apakah website saya akan SEO-friendly?",
+    a: "Ya. Semua paket sudah termasuk SEO dasar (meta tags, sitemap, robots.txt, schema.org, kecepatan loading, mobile-friendly). Paket Business ke atas mendapat optimasi lanjutan: Core Web Vitals, rich snippets, dan laporan ranking bulanan selama 3 bulan.",
+  },
+  {
+    category: "Pasca Launch",
+    q: "Apa yang terjadi setelah website selesai?",
+    a: "Anda mendapat garansi bug fix (1-3 bulan sesuai paket), maintenance gratis 1 bulan (Business), training admin, dokumentasi, dan akses penuh ke source code. Setelahnya tersedia paket maintenance bulanan mulai Rp 500rb/bulan.",
+  },
+  {
+    category: "Pasca Launch",
+    q: "Jika saya ingin pindah vendor, bagaimana?",
+    a: "Setelah pelunasan, source code 100% milik Anda. Kami akan membantu proses handover (domain transfer, hosting migration, dokumentasi) tanpa biaya tambahan. Kami ingin Anda stay karena kualitas, bukan karena terkunci.",
+  },
+  {
+    category: "Pasca Launch",
+    q: "Bagaimana jika ada bug setelah masa garansi habis?",
+    a: "Tersedia paket maintenance bulanan (mulai Rp 500rb/bulan) yang mencakup bug fix, update konten minor, backup rutin, dan monitoring uptime. Untuk bug critical, tiket darurat bisa dibuka dengan biaya per-insiden.",
+  },
+  {
+    category: "Umum",
+    q: "Apakah bisa membuat website 1 halaman saja?",
+    a: "Bisa. Paket Starter sangat cocok untuk landing page single-page (misalnya untuk kampanye marketing, pre-launch produk, atau portofolio pribadi).",
+  },
+  {
+    category: "Umum",
+    q: "Apakah Arlay juga melayani redesign website lama?",
+    a: "Ya. Kami banyak menangani migrasi dari WordPress/Wix ke stack modern, atau redesign UI/UX dengan konten yang tetap sama. Proses mirip proyek baru tapi biasanya lebih cepat karena struktur konten sudah ada.",
   },
 ];

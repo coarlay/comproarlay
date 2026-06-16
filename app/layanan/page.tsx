@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   Code2,
-  GraduationCap,
   Check,
   ArrowRight,
   Layers,
   Rocket,
   PenTool,
   Settings,
+  TrendingUp,
+  FileText,
+  Cpu,
 } from "lucide-react";
 import { PageHeader } from "@/components/shared/page-header";
 import { Button } from "@/components/ui/button";
@@ -19,12 +21,14 @@ import { SERVICES, FAQ } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Layanan Arlay",
   description:
-    "Jasa pembuatan website profesional dan kelas coding online. Solusi digital lengkap untuk bisnis dan karir Anda.",
+    "Jasa pembuatan website profesional. Solusi digital lengkap untuk pertumbuhan bisnis Anda.",
 };
 
-const iconMap = {
+const iconMap: Record<string, typeof Code2> = {
   Code2,
-  GraduationCap,
+  TrendingUp,
+  FileText,
+  Cpu,
 };
 
 const workflow = [
@@ -59,8 +63,8 @@ export default function LayananPage() {
     <>
       <PageHeader
         eyebrow="Layanan Kami"
-        title="Dua pilar digital untuk pertumbuhan Anda"
-        description="Baik membangun produk digital untuk bisnis, maupun mencetak developer siap kerja. Arlay hadir dengan pendekatan yang terbukti."
+        title="Solusi digital untuk pertumbuhan Anda"
+        description="Kami membangun produk digital yang sesuai kebutuhan bisnis Anda dengan pendekatan yang terbukti."
       />
 
       <section className="py-12 md:py-16">
@@ -109,11 +113,6 @@ export default function LayananPage() {
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
                       </Link>
-                      {service.id === "coding-class" && (
-                        <Link href="/kelas">
-                          <Button variant="outline">Lihat Semua Kelas</Button>
-                        </Link>
-                      )}
                       {service.id === "web-development" && (
                         <Link href="/portfolio">
                           <Button variant="outline">Lihat Portfolio</Button>

@@ -17,7 +17,7 @@ import { ContactForm } from "./contact-form";
 export const metadata: Metadata = {
   title: "Kontak Arlay",
   description:
-    "Hubungi Arlay untuk konsultasi proyek website atau pendaftaran kelas coding. Tersedia via form, WhatsApp, email, dan sosial media.",
+    "Hubungi Arlay untuk konsultasi proyek website. Tersedia via form, WhatsApp, email, dan sosial media.",
 };
 
 const contactChannels = [

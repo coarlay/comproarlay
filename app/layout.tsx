@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
 import { WhatsAppButton } from "@/components/shared/whatsapp-button";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, FAQ } from "@/lib/constants";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,9 +28,8 @@ export const metadata: Metadata = {
   keywords: [
     "jasa pembuatan website",
     "web development indonesia",
-    "kelas coding online",
-    "belajar programming",
-    "bootcamp coding",
+    "pembuatan company profile",
+    "jasa website e-commerce",
     "Next.js developer",
     "web developer Jakarta",
     "Arlay",
@@ -75,6 +74,96 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "LocalBusiness",
+                  "@id": `${SITE_CONFIG.url}/#business`,
+                  name: SITE_CONFIG.name,
+                  description: SITE_CONFIG.description,
+                  url: SITE_CONFIG.url,
+                  telephone: SITE_CONFIG.phone,
+                  email: SITE_CONFIG.email,
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: SITE_CONFIG.address,
+                    addressLocality: "Jakarta Selatan",
+                    addressRegion: "DKI Jakarta",
+                    addressCountry: "ID",
+                  },
+                  sameAs: [
+                    SITE_CONFIG.social.instagram,
+                    SITE_CONFIG.social.linkedin,
+                    SITE_CONFIG.social.github,
+                    SITE_CONFIG.social.youtube,
+                  ],
+                  priceRange: "$$",
+                  aggregateRating: {
+                    "@type": "AggregateRating",
+                    ratingValue: "4.9",
+                    reviewCount: "120",
+                    bestRating: "5",
+                  },
+                },
+                {
+                  "@type": "Service",
+                  "@id": `${SITE_CONFIG.url}/#service`,
+                  name: "Jasa Pembuatan Website",
+                  description:
+                    "Jasa pembuatan website profesional: company profile, e-commerce, web app, dan custom development.",
+                  provider: {
+                    "@type": "LocalBusiness",
+                    "@id": `${SITE_CONFIG.url}/#business`,
+                  },
+                  areaServed: {
+                    "@type": "Country",
+                    name: "Indonesia",
+                  },
+                  serviceType: "Web Development",
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "IDR",
+                    price: "3500000",
+                    priceSpecification: {
+                      "@type": "PriceSpecification",
+                      priceCurrency: "IDR",
+                      price: "3500000",
+                      description: "Mulai dari Rp 3.500.000 untuk paket Starter",
+                    },
+                  },
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": `${SITE_CONFIG.url}/#faq`,
+                  mainEntity: FAQ.map((faq) => ({
+                    "@type": "Question",
+                    name: faq.q,
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: faq.a,
+                    },
+                  })),
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": `${SITE_CONFIG.url}/#website`,
+                  name: SITE_CONFIG.name,
+                  url: SITE_CONFIG.url,
+                  publisher: {
+                    "@type": "LocalBusiness",
+                    "@id": `${SITE_CONFIG.url}/#business`,
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} font-sans bg-background text-foreground min-h-screen flex flex-col`}
       >

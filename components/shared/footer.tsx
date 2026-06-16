@@ -5,7 +5,6 @@ import { SITE_CONFIG, NAV_LINKS } from "@/lib/constants";
 
 const productLinks = [
   { label: "Jasa Website", href: "/layanan#web-development" },
-  { label: "Kelas Coding", href: "/kelas" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Tentang Kami", href: "/tentang" },
 ];

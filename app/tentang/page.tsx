@@ -8,7 +8,7 @@ import { TEAM, STATS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Tentang Arlay",
   description:
-    "Kenali visi, misi, dan tim di balik Arlay. Sebuah studio digital yang percaya teknologi harus ramah, berdampak, dan mencetak talenta.",
+    "Kenali visi, misi, dan tim di balik Arlay. Sebuah studio digital yang percaya teknologi harus ramah, berdampak, dan membantu bisnis bertumbuh.",
 };
 
 const values = [
@@ -34,7 +34,7 @@ const values = [
     icon: Users2,
     title: "Kolaborasi",
     description:
-      "Klien dan alumni adalah partner. Keberhasilan mereka adalah kemenangan kami.",
+      "Klien adalah partner. Keberhasilan mereka adalah kemenangan kami.",
   },
 ];
 
@@ -47,21 +47,21 @@ const timeline = [
   },
   {
     year: "2022",
-    title: "Ekspansi Kelas Coding",
+    title: "Ekspansi Layanan",
     description:
-      "Melihat kebutuhan talenta tech di Indonesia, kami buka program kelas coding online pertama dengan 30 siswa batch perdana.",
+      "Melihat tingginya kebutuhan digitalisasi, kami memperluas layanan ke e-commerce dan aplikasi web custom untuk berbagai industri.",
   },
   {
     year: "2023",
-    title: "100+ Proyek & 500+ Alumni",
+    title: "100+ Proyek Selesai",
     description:
-      "Melayani klien dari berbagai skala, mencetak ratusan alumni yang diterima di perusahaan teknologi ternama.",
+      "Melayani klien dari berbagai skala industri, dari UMKM hingga perusahaan dengan kebutuhan digital yang kompleks.",
   },
   {
     year: "2024",
     title: "Skala & Impact",
     description:
-      "Membuka program beasiswa coding untuk 100 siswa dari daerah. Memperluas layanan ke tingkat enterprise.",
+      "Memperluas layanan ke tingkat enterprise dan dipercaya menangani proyek digital berskala besar di berbagai industri.",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function TentangPage() {
       <PageHeader
         eyebrow="Tentang Kami"
         title="Membangun digital Indonesia, satu proyek dalam satu waktu"
-        description="Arlay lahir dari keyakinan bahwa teknologi hebat seharusnya accessible dan pendidikan coding seharusnya membekaskan dampak nyata."
+        description="Arlay lahir dari keyakinan bahwa teknologi hebat seharusnya accessible dan setiap bisnis berhak hadir online dengan percaya diri."
       />
 
       <section className="py-12 md:py-20">
@@ -87,9 +87,9 @@ export default function TentangPage() {
                   Visi Kami
                 </h2>
                 <p className="mt-3 text-muted-foreground leading-relaxed">
-                  Menjadi partner digital terdepan di Indonesia yang tidak
-                  hanya membangun produk, tapi juga mencetak talenta teknologi
-                  yang mendorong kemajuan bangsa.
+                  Menjadi partner digital terdepan di Indonesia yang membangun
+                  produk berkualitas dan mendorong pertumbuhan bisnis di era
+                  digital.
                 </p>
               </div>
             </div>
@@ -109,12 +109,12 @@ export default function TentangPage() {
                     harga yang adil.
                   </li>
                   <li>
-                    → Mencetak developer siap kerja lewat pendidikan aplikatif
-                    dan mentor industri.
+                    → Mengutamakan kualitas, kecepatan, dan transparansi di
+                    setiap proyek yang kami kerjakan.
                   </li>
                   <li>
-                    → Menjadi rumah bagi komunitas tech yang saling mendukung
-                    untuk bertumbuh.
+                    → Menjadi partner jangka panjang yang tumbuh bersama klien
+                    kami.
                   </li>
                 </ul>
               </div>
@@ -216,8 +216,8 @@ export default function TentangPage() {
               Orang-orang di balik Arlay
             </h2>
             <p className="mt-3 text-muted-foreground">
-              Perpaduan engineer, designer, dan educator yang passionate
-              membangun ekosistem digital Indonesia.
+              Perpaduan engineer dan designer yang passionate membangun produk
+              digital terbaik untuk bisnis Indonesia.
             </p>
           </div>
 

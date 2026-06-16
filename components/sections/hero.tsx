@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Play } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedBackground } from "@/components/shared/animated-background";
 
@@ -29,9 +29,9 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Bangun Digital,
+            Bangun Digital
             <br />
-            <span className="text-gradient">Cetak Talenta</span>
+            <span className="text-gradient">Bersama Arlay</span>
           </motion.h1>
 
           <motion.p
@@ -40,8 +40,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl"
           >
-            Arlay membantu bisnis Anda hadir online dengan website modern, dan
-            mencetak developer siap kerja lewat kelas coding yang aplikatif.
+            Arlay membantu bisnis Anda hadir online dengan website modern,
+            cepat, dan SEO-friendly yang dirancang untuk mendorong pertumbuhan.
           </motion.p>
 
           <motion.div
@@ -56,14 +56,14 @@ export function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
-            <Link href="/kelas" className="w-full sm:w-auto">
+            <Link href="/portfolio" className="w-full sm:w-auto">
               <Button
                 size="xl"
                 variant="glass"
                 className="group w-full sm:w-auto"
               >
-                <Play className="mr-2 h-4 w-4 fill-current" />
-                Mulai Belajar
+                Lihat Portfolio
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
           </motion.div>

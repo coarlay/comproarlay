@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Code2, GraduationCap, ArrowUpRight, Check } from "lucide-react";
+import { Code2, ArrowUpRight, Check, TrendingUp, FileText, Cpu } from "lucide-react";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { SERVICES } from "@/lib/constants";
 
-const iconMap = {
+const iconMap: Record<string, typeof Code2> = {
   Code2,
-  GraduationCap,
+  TrendingUp,
+  FileText,
+  Cpu,
 };
 
 export function ServicesPreview() {
@@ -18,10 +20,10 @@ export function ServicesPreview() {
         <SectionHeading
           eyebrow="Layanan"
           title="Solusi Digital Lengkap"
-          description="Dari membangun website untuk bisnis Anda, hingga mencetak developer siap kerja. Semua dalam satu atap."
+          description="Kami bantu bisnis Anda hadir online dengan website modern, cepat, dan SEO-friendly."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2">
+        <div className="mx-auto mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service, i) => {
             const Icon =
               iconMap[service.icon as keyof typeof iconMap] || Code2;

@@ -1,18 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface LogoProps {
   className?: string;
-  /** Tinggi logo dalam pixel. Lebarnya auto mengikuti aspect ratio 680:220. */
+  /** Tinggi logo dalam pixel */
   height?: number;
-  priority?: boolean;
 }
 
-export function Logo({ className, height = 36, priority = false }: LogoProps) {
-  // aspect ratio dari viewBox SVG: 680 / 220
-  const width = Math.round((height * 680) / 220);
-
+export function Logo({ className, height = 44 }: LogoProps) {
   return (
     <Link
       href="/"
@@ -23,12 +19,12 @@ export function Logo({ className, height = 36, priority = false }: LogoProps) {
       )}
     >
       <Image
-        src="/arlay.png"
-        alt="Arlay"
-        width={width}
+        src="/arlayfixx.png"
+        alt="Arlay logo"
+        width={Math.round((height * 3.1))}
         height={height}
-        priority={priority}
-        className="h-8 w-auto md:h-9"
+        className="h-10 w-auto md:h-12"
+        priority
       />
     </Link>
   );

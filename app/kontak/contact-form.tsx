@@ -11,7 +11,6 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 const topics = [
   "Jasa Pembuatan Website",
-  "Kelas Coding Online",
   "Konsultasi Umum",
   "Kerja Sama / Partnership",
 ];
